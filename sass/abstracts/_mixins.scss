@@ -1,49 +1,54 @@
 @mixin mobile {
   @media screen and (max-width:500px) {
-    .hero {
-    background-color: yellow;
+    body {
+      width: 100vw;
+    }
+
+    .header {
+      .nav-bar{
+        display: none;
+        .nav-box {
+          display: none;
+        }
+      }
+    }
+    .header {
+      display: flex;
+      .nav-bar-mobile {
+        display: flex;
+        justify-content: flex-end;
+        flex-basis: 100vw;
+        min-width: 100vw;
+        height: 100%;
+        z-index: 1000;
+        background-color: white;
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px grey;
+        .hamburger-container {
+          height: 90%;
+          width: 100px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+            .bar-1{
+              height: 5px;
+              width: 30px;
+              background-color: grey;
+              border-radius: 2px;
+            }
+            .bar-2{
+              @extend .bar-1;
+            }
+            .bar-3 {
+              @extend .bar-1;
+            }
+          }
+        }
+      }
+      .footer {
+        flex-direction: column;
+        flex-wrap: wrap; 
+      }
     }
   }
-}
-  // .header {
-  //   .nav-bar{
-  //     display: hide;
-  //     .nav-box {
-  //       display: hide;
-  //     }
-  //   }
-  // }
-//   .header {
-//     background-color: blue;
-//     .nav-bar-mobile {
-//       background-color: red;
-//       display: block;
-//       justify-content: space-around;
-//       width: 100vw;
-//       height: 100px;
-//       z-index: 1000;
-//       box-shadow: 5px 5px 10px grey;
-//
-//       .hamburger-container {
-//         background-color: blue;
-//         height: 100px;
-//         width: 100px;
-//         background-color: blue;
-//         display: flex;
-//         flex-direction: column;
-//         align-content: space-around;
-//           .bar-1{
-//             height: 20px;
-//             width: 75px;
-//           }
-//           .bar-2{
-//             @extend .bar-1;
-//           }
-//           .bar-3 {
-//             @extend .bar-1;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
