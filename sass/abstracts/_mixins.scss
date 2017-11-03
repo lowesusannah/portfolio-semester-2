@@ -1,0 +1,49 @@
+@mixin mobile {
+  @media screen and (max-width:500px) {
+    .hero {
+    background-color: yellow;
+    }
+  }
+}
+  // .header {
+  //   .nav-bar{
+  //     display: hide;
+  //     .nav-box {
+  //       display: hide;
+  //     }
+  //   }
+  // }
+//   .header {
+//     background-color: blue;
+//     .nav-bar-mobile {
+//       background-color: red;
+//       display: block;
+//       justify-content: space-around;
+//       width: 100vw;
+//       height: 100px;
+//       z-index: 1000;
+//       box-shadow: 5px 5px 10px grey;
+//
+//       .hamburger-container {
+//         background-color: blue;
+//         height: 100px;
+//         width: 100px;
+//         background-color: blue;
+//         display: flex;
+//         flex-direction: column;
+//         align-content: space-around;
+//           .bar-1{
+//             height: 20px;
+//             width: 75px;
+//           }
+//           .bar-2{
+//             @extend .bar-1;
+//           }
+//           .bar-3 {
+//             @extend .bar-1;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

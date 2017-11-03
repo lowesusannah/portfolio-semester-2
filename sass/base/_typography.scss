@@ -1,0 +1,28 @@
+// font-family: 'Special Elite', cursive;
+// font-family: 'Raleway', sans-serif;
+
+.logo {
+
+}
+
+a {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5em;
+  color: slategrey;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  @extend h1;
+  font-size: 1.5em;
+}
+
+h5 {
+  @extend h3;
+  font-size: 1em;
+}

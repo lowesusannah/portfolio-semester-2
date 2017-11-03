@@ -7,12 +7,26 @@
   z-index: 1000;
   background-color: white;
   opacity: 0.7;
+  box-shadow: 5px 5px 10px grey;
   .nav-box {
     min-width: 30%;
     flex-grow: 1;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav-box:hover {
+    color: darken(slategrey, 10%);
   }
 }
+
+a {
+  text-decoration: none;
+}
+
+// .nav-bar-mobile {
+//   display: none;
+// }
 
 .footer {
   min-width: 100vw;

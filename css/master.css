@@ -6,6 +6,22 @@
 * {
   margin: 0; }
 
+a {
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5em;
+  color: slategrey; }
+
+h1, h3, h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  font-weight: bold; }
+
+h3, h5 {
+  font-size: 1.5em; }
+
+h5 {
+  font-size: 1em; }
+
 .nav-bar {
   display: flex;
   justify-content: space-around;
@@ -14,11 +30,19 @@
   height: 100%;
   z-index: 1000;
   background-color: white;
-  opacity: 0.7; }
+  opacity: 0.7;
+  box-shadow: 5px 5px 10px grey; }
   .nav-bar .nav-box {
     min-width: 30%;
     flex-grow: 1;
-    text-align: center; }
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto; }
+  .nav-bar .nav-box:hover {
+    color: #5a6773; }
+
+a {
+  text-decoration: none; }
 
 .footer {
   min-width: 100vw;
