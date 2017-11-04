@@ -1,67 +1,76 @@
-.main {
-  background-color: lightblue;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
+img {
   width: 100%;
-  flex-basis: 1;
+}
+
+.main {
+  // display: flex;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // align-items: flex-start;
+  width: 100%;
+  // flex-basis: 1;
   .hero {
-    background-color: black;
+    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/LJB9IHYKU9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
     display: flex;
     flex-direction: column;
-    min-width: 100%;
-    height: 500px;
-    flex-basis: 1;
-    flex-grow: 1;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+
     .text {
-      flex-direction: row;
+      height: 200px;
+      width: 300px;
+      padding: 20px;
+      margin-top: 75px;
+      margin-bottom: 200px;
+      flex-direction: column;
+      align-self: center;
       flex-basis: 30vw;
-      align-self: flex-start;
+      text-align: center;
     }
   }
   .portfolio {
+    background-color: #1d293d;
+    margin-top: 20px;
+    border: 10px solid transparent;
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     .display {
+      align-self: flex-start;
       height: 300px;
       width: 500px;
-      background-color: green;
-      margin: auto;
+      margin: 20px;
       padding: 10px;
-      border: 5px solid blue;
+      border: 5px solid transparent;
       .sub-display {
-        background-color: grey;
-        background-color: grey;
+        background-color: (255, 255, 255, 0.5);
         height: 95%;
         width: 150px;
       }
     }
     .box {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-self: flex-start;
-      flex-grow: 1;
-      height: 300px;
+      height: 200px;
       width: 300px;
-      border: 5px solid blue;
-      margin: auto;
-      background-color: yellow;
-      .sub-box {
-        background-color: grey;
-        height: 95%;
-        width: 100px;
-      }
+      border: 5px solid transparent;
+      margin: 10px;
+      flex-grow: 1; 
     }
   }
   .about {
-    height: 300px;
-    width: 100%;
-    flex-basis: 1;
-    flex-grow: 1;
-    background-color: purple;
+    color: white;
+    font-size: 3em;
+    height: 400px;
+    width: 100vw;
+    padding: 20px;
+    background-color: darkgrey;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
   }
 }
 

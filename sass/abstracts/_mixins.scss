@@ -6,9 +6,11 @@
 
     .header {
       .nav-bar{
-        display: none;
+        position: -100px;
+        overflow: hidden;
         .nav-box {
-          display: none;
+          position: -100px;
+          overflow: hidden;
         }
       }
     }
@@ -31,24 +33,43 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-around;
+          position: relative;
             .bar-1{
+              top: 5px;
               height: 5px;
               width: 30px;
               background-color: grey;
               border-radius: 2px;
+              position: absolute;
             }
             .bar-2{
-              @extend .bar-1;
+              height: 5px;
+              width: 30px;
+              background-color: grey;
+              border-radius: 2px;
+              position: absolute;
             }
             .bar-3 {
-              @extend .bar-1;
+              height: 5px;
+              width: 30px;
+              background-color: grey;
+              border-radius: 2px;
+              position: absolute;
+              bottom: 5px;
             }
           }
         }
       }
+      .about {
+        font-size: 1em;
+        height: 1000px;
+        width: 100vw;
+        padding: 10px;
+        overflow: hidden; 
+      }
       .footer {
         flex-direction: column;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
       }
     }
   }

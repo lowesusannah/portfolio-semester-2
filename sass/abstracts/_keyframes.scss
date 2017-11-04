@@ -1,0 +1,26 @@
+
+@keyframes appear {
+  75%{
+    transform: scaleY(100px);
+  }
+  100% {
+    transform: translateY(200px);
+  }
+}
+
+
+@keyframes dissapear {
+  100% {
+    opacity: 0;
+  }
+}
+
+// @keyframes go-up-then-cross-right {
+//   75%{
+//     transform: translateY(-10px);
+//   }
+//   100% {
+//     transform-origin: center;
+//     transform: rotate(-45deg);
+//   }
+// }

@@ -1,0 +1,15 @@
+.hamburger-container {
+  transition: ease-in 1s;
+}
+
+.hamburger-container:hover {
+  .bar-1{
+    animation: dissapear 3s ease 0s 1;
+  }
+  .bar-2{
+    animation: dissapear 3s ease 0s 1;
+  }
+  .bar-3 {
+    animation: dissapear 3s ease 0s 1;
+  }
+}

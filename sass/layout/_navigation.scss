@@ -15,40 +15,37 @@
     margin-top: auto;
     margin-bottom: auto;
   }
-  .nav-box:hover {
-    color: darken(slategrey, 10%);
-  }
 }
 
 a {
   text-decoration: none;
+  transition: all .3s ease;
 }
 
+a:hover {
+  transform: scale(2, 2);
+}
 
 .footer {
+  background-color: #1d293d;
+  color: white;
   min-width: 100vw;
   flex-basis: 1;
   height: 700px;
-  background-color: green;
   display: flex;
   .copyright {
     flex-grow: 1;
     flex-basis: 2;
-    background-color: green;
-    border: 5px solid green;
   }
   .menu{
     flex-grow: 1;
     flex-basis: 2;
-    background-color: blue;
-    border: 5px solid green;
   }
   .contact{
     flex-grow: 1;
     flex-basis: 2;
-    background-color: white;
-    border: 5px solid green;
   }
+  box-shadow: 5px 5px 5px grey; 
 }
 
 body {
