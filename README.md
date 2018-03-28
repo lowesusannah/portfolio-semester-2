@@ -13,6 +13,7 @@ _This application utilizes CSS flexbox, animations, transforms and translates to
 ##  Setup/Installation Requirements
 
 * _Clone this directory from GitHub onto your machine_
+*_Within the command line, run $ npm install_
 * _Navigate to the program using your favorite shell, such as Terminal_
 * _Open with your favorite text editor, like Atom or Sublime_
 
