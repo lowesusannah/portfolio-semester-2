@@ -70,6 +70,42 @@ gulp.task("build", ['clean'], function(){
   gulp.start('cssBuild');
 });
 
+gulp.task('serve', ['build'], function() {
+  browserSync.init({
+    server: {
+      baseDir: "./",
+      index: "index.html"
+    }
+  })
+});
+
+gulp.watch(['js/*.js'], ['jsBuild']);
+gulp.watch(['bower.json'], ['bowerBuild']);
+gulp.watch(['*.html'], ['htmlBuild']);
+gulp.watch("scss/*.scss", ['cssBuild']);
+});
+
+gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function() {
+  browserSync.reload();
+});
+
+gulp.task('bowerBuild', ['bower'], function(){
+  browserSync.reload();
+});
+
+gulp.task('htmlBuild', function(){
+  browserSync.reload();
+});
+
+gulp.task('cssBuild', function() {
+  return gulp.src('scss/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./build/css'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
     .pipe(jshint())
