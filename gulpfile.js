@@ -7,13 +7,11 @@ var utilities = require('gulp-util');
 var del = require('del');
 var jshint = require('gulp-jshint');
 var buildProduction = utilities.env.production;
+
+var lib = require('bower-files');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-
-gulp.task('myTask', function(){
-  console.log('hello gulp');
-});
 
 gulp.task('jshint', function(){
   return gulp.src(['js/*.js'])
@@ -83,7 +81,6 @@ gulp.watch(['js/*.js'], ['jsBuild']);
 gulp.watch(['bower.json'], ['bowerBuild']);
 gulp.watch(['*.html'], ['htmlBuild']);
 gulp.watch("scss/*.scss", ['cssBuild']);
-});
 
 gulp.task('jsBuild', ['jsBrowserify', 'jshint'], function() {
   browserSync.reload();

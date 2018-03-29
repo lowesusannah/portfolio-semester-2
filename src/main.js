@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp}.`);
       },
       error: function() {
-        $('#errors').text("There was an error processing your request. Please try again.")
+        $('#errors').text("There was an error processing your request. Please try again.");
       }
     });
   });
